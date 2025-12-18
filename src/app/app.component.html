@@ -1,4 +1,377 @@
 
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>sr no</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Contact</th>
+      <th>Edit</th>
+      <th>Remove</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let std of stdArr; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ std.fname }}</td>
+      <td>{{ std.lname }}</td>
+      <td>{{ std.email }}</td>
+      <td>{{ std.contact }}</td>
+
+      <td>
+        <button class="btn btn-sm btn-outline-primary">
+          Edit
+        </button>
+      </td>
+
+      <td>
+        <button class="btn btn-sm btn-outline-danger">
+          Remove
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Sr No.</th>
+      <th>Product N</th>
+      <th>Brand N</th>
+      <th>Price</th>
+      <th>Category</th>
+      <th>Id</th>
+      <th>Edit</th>
+      <th>Rmeove</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pro of proArr; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{pro.pname}}</td>
+      <td>{{pro.brand}}</td>
+      <td>{{pro.price}}</td>
+      <td>{{pro.category}}</td>
+      <td>{{pro.pid}}</td>
+
+      <td>
+        <button class="btn btn-sm btn-outline-primary">Edit</button>
+      </td>
+
+      <td>
+        <button class="btn btn-sm btn-block btn-outline-danger">Remove</button>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<br>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Sr No</th>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Industry</th>
+      <th>Employes</th>
+      <th>Id</th>
+      <th>Edit</th>
+      <th>Remove</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of compArr; let i = index">
+      <td>{{i+1}}</td>
+      <td>{{c.cname}}</td>
+      <td>{{c.location}}</td>
+      <td>{{c.employees}}</td>
+      <td>{{c.industry}}</td>
+      <td>{{c.cid}}</td>
+
+      <td>
+        <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+          <mat-icon>edit</mat-icon>
+        </button>
+      </td>
+      <td>
+        <button mat-fab color="warn" aria-label="Example icon button with a delete icon">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Sr No</th>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Industry</th>
+      <th>Employes</th>
+      <th>Id</th>
+      <th>Edit</th>
+      <th>Remove</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let comp of companyArr; let i = index">
+      <td>{{i+1}}</td>
+      <td>{{comp.cname1}}</td>
+      <td>{{comp.location1}}</td>
+      <td>{{comp.employees1}}</td>
+      <td>{{comp.industry1}}</td>
+      <td>{{comp.cid1}}</td>
+
+       <td>
+        <button mat-raised-button color="primary">edit</button>
+      </td>
+      <td>
+         <button mat-raised-button color="warn">Remove</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Sr No</th>
+      <th>Name</th>
+      <th>Dept</th>
+      <th>Salary</th>
+      <th>Experience</th>
+      <th>EId</th>
+      <th>Edit</th>
+      <th>Remove</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let e of empArr; let i = index">
+      <td>{{i+1}}</td>
+      <td>{{e.ename}}</td>
+      <td>{{e.department}}</td>
+      <td>{{e.salary}}</td>
+      <td>{{e.experience}}</td>
+      <td>{{e.eid}}</td>
+ <td>
+        <button mat-raised-button color="primary">edit</button>
+      </td>
+      <td>
+         <button mat-raised-button color="warn">Remove</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Sr No</th>
+      <th>Name</th>
+      <th>Trainer</th>
+      <th>Duration</th>
+      <th>Fees</th>
+      <th>Course Id</th>
+      <th>Edit</th>
+      <th>Remove</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cou of courseArr; let i = index">
+      <td>{{i+1}}</td>
+      <td>{{cou.courseName}}</td>
+      <td>{{cou.trainer}}</td>
+      <td>{{cou.duration}}</td>
+      <td>{{cou.fees}}</td>
+      <td>{{cou.courseId}}</td>
+
+       <td>
+        <button mat-raised-button color="primary">edit</button>
+      </td>
+      <td>
+         <button mat-raised-button color="warn">Remove</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Sr No</th>
+      <th>Name</th>
+      <th>Subject</th>
+      <th>Salary</th>
+      <th>Experience</th>
+      <th>T Id</th>
+      <th>Edit</th>
+      <th>Remove</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let t of teacherArr; let i = index">
+      <td>{{i+1}}</td>
+      <td>{{t.tname}}</td>
+      <td>{{t.subject}}</td>
+      <td>{{t.salary}}</td>
+      <td>{{t.experience}}</td>
+      <td>{{t.tid}}</td>
+       <td>
+        <button mat-raised-button color="primary">edit</button>
+      </td>
+      <td>
+         <button mat-raised-button color="warn">Remove</button>
+      </td>
+      
+    </tr>
+  </tbody>
+</table>
 
 
-<h1>hi shivdas error</h1>
+<br>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-group">
+        <li *ngFor="let s of skills"
+        class="list-group-item">
+          I LOVE {{s}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-group">
+        <li *ngFor="let l of languages"
+        class="list-group-item">
+          I LOVE {{l}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-group">
+        <li *ngFor="let f of frameworks"
+        class="list-group-item">
+           {{f}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-group">
+        <li *ngFor="let a of ages"
+        class="list-group-item">
+           {{a}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-group">
+        <li *ngFor="let p of prices"
+        class="list-group-item">
+           {{p}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-group">
+        <li *ngFor="let r of ratings"
+        class="list-group-item">
+           {{r}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-group">
+        <li *ngFor="let to of tools"
+        class="list-group-item">
+           {{to}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-group">
+        <li *ngFor="let ex of experienceYears"
+        class="list-group-item">
+           {{ex}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-group">
+        <li *ngFor="let ra of ramSizes"
+        class="list-group-item">
+           {{ra}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
